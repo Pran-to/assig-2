@@ -159,6 +159,71 @@ font-weight: 400;
 }
 
 
+.funny-video-content{
+    margin-top:50px;
+text-align: center;
+}
+.funny-video-content h1{
+    font-size: 2rem;
+font-weight: 800;
+}
+.funny-video-text{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.funny-video-img{
+    display: flex;
+    gap: 15px;
+    margin: 3rem 9rem;
+}
+.funny-img {  
+    width:100%;
+}
+.funny-image-container {
+    position: relative;
+    display: inline-block; 
+  }
+ 
+  /* Styling for the overlay */
+  .funny-image-container .overlay {
+    position: absolute;
+    border-radius: 0.5rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 79%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+    cursor: pointer;
+  }
+  
+  .funny-image-container .overlay i {
+    margin-top: 10px;
+    margin-left: 2rem;
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+  .funny-image-container .overlay p {
+    margin-top: 0.5rem;
+    color: #fc0bb4;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  /* Show the overlay on hover */
+  .funny-image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+
+
 /* responsive for mobile */
 
 @media screen and (max-width: 576px) {
