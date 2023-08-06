@@ -105,6 +105,7 @@ nav>ul>li>a {
     border-radius: 2rem;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
     border: none;
+    cursor: pointer;
 
 }
 
@@ -116,6 +117,7 @@ nav>ul>li>a {
     font-size: 0.8rem;
     background: #4EC5F7;
     margin-left: 10px;
+    cursor: pointer;
 
 }
 
@@ -161,6 +163,7 @@ nav>ul>li>a {
     border-radius: 2rem;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
     border: none;
+    cursor: pointer;
 
 }
 
@@ -235,44 +238,103 @@ nav>ul>li>a {
 }
 
 /* play-instantly-container */
-.play-instantly-container{
+.play-instantly-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.play-inst-content{  
-    text-align: right; 
+
+.play-inst-content {
+    text-align: right;
 
 }
-.play-inst-content h2{
+
+.play-inst-content h2 {
     font-size: 1.9rem;
 }
-.play-inst-content h2 span{
+
+.play-inst-content h2 span {
 
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-.play-inst-img{
-   
-    width:50% ;
-
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+.play-inst-img {
 
-.play-inst-img-1{
+    width: 50%;
+
+}
+
+
+.play-inst-img-1 {
     margin-left: 10rem;
- 
+
     width: 80%;
 }
-.play-inst-img-2{
+
+.play-inst-img-2 {
     position: absolute;
     width: 18%;
     margin-top: 22rem;
-   
+
 }
 
+/* Careers-btn */
+
+
+.Careers-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    background-color: #F948B2;
+}
+
+.Careers-content {
+    width: 40%;
+    margin-left: 15%;
+}
+
+.Careers-content h2 {
+
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.Careers-content>article {
+    color: #FFF;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.Careers-img {
+    width: 50%;
+}
+
+.Careers-img img {
+    width: 100%;
+}
+
+.Careers-options {
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Careers-btn {
+    color: #F948B2;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background: #FFF;
+    border: none;
+    cursor: pointer;
+
+}
 
 /*........... responsive for mobile ...........*/
 
@@ -358,7 +420,7 @@ background-clip: text;
     }
 
     /* <!-- Online Game funny video section responsive --> */
-    .funny-video-content{
+    .funny-video-content {
         margin: 0 3rem;
     }
 
@@ -367,33 +429,52 @@ background-clip: text;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0  4.9rem;
+        margin: 0 4.9rem;
     }
+
     /* play-instantly-container */
-.play-instantly-container{
-    flex-direction: column;
-}
-.play-inst-content{
-    text-align: center;
-}
-.play-inst-img{
-   
-    width:80% ;
+    .play-instantly-container {
+        flex-direction: column;
+    }
 
-}
-.play-inst-img-1{
-    margin-left: 15%;
-}
-.play-inst-img-2{
-    position: absolute;
-    width: 28%;
-    margin-top: 25rem;
-    margin-right: 45%;
-   
-}
+    .play-inst-content {
+        text-align: center;
+    }
 
+    .play-inst-img {
 
+        width: 80%;
 
+    }
+
+    .play-inst-img-1 {
+        margin-left: 15%;
+    }
+
+    .play-inst-img-2 {
+
+        width: 28%;
+        margin-top: 25rem;
+        margin-right: 45%;
+
+    }
+
+    /* Careers section responsive */
+
+    .Careers-container {
+
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .Careers-content {
+        width: 80%;
+        margin: 0;
+    }
+
+    .Careers-img {
+        width: 80%;
+    }
 
 }
 
@@ -453,8 +534,8 @@ background-clip: text;
         background: #FFF;
     }
 
-     /* <!-- Online Game funny video section responsive --> */
-     .funny-video-content{
+    /* <!-- Online Game funny video section responsive --> */
+    .funny-video-content {
         margin: 0 3rem;
     }
 
@@ -463,11 +544,38 @@ background-clip: text;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0  4.9rem;
-    }
-    .funny-image-container .overlay{
-        height: 89%;
-        
+        margin: 0 4.9rem;
     }
 
+    .funny-image-container .overlay {
+        height: 89%;
+
+    }
+
+    /* play-instantly-container */
+    .play-instantly-container {
+        flex-direction: column;
+    }
+
+    .play-inst-content {
+        text-align: center;
+    }
+
+    .play-inst-img {
+
+        width: 80%;
+
+    }
+
+    .play-inst-img-1 {
+        margin-left: 15%;
+    }
+
+    .play-inst-img-2 {
+
+        width: 28%;
+        margin-top: 35rem;
+        margin-right: 45%;
+
+    }
 }
